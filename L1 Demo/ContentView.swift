@@ -25,20 +25,31 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    Image(systemName: "star")
-                        .foregroundColor(.yellow)
-                    Image(systemName: "star")
-                        .foregroundColor(.yellow)
+                    Spacer()
+                    
+                    VStack {
+                        HStack {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                                .font(.caption)
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                                .font(.caption)
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                                .font(.caption)
+                            Image(systemName: "star.leadinghalf.filled")
+                                .foregroundColor(.yellow)
+                                .font(.caption)
+                            Image(systemName: "star")
+                                .foregroundColor(.yellow)
+                                .font(.caption)
+                        }
+                        
+                        Text("(Reviews 361)")
+                    }
                     // Image(systemName: "apple.logo")
                     // Image(systemName: "applescript.fill")
-                    
-                    Text("(+3)")
                 }
                 
                 Text("please be a go language developer uwu")
