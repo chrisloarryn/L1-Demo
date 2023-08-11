@@ -44,6 +44,7 @@
 		4999391C2A85DBF300D2ACDD /* L1 DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "L1 DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		499939202A85DBF300D2ACDD /* L1_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1_DemoUITests.swift; sourceTree = "<group>"; };
 		499939222A85DBF300D2ACDD /* L1_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		499939652A85F67D00D2ACDD /* MyPlayground_01.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground_01.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		499939042A85DBF200D2ACDD /* L1 Demo */ = {
 			isa = PBXGroup;
 			children = (
+				499939652A85F67D00D2ACDD /* MyPlayground_01.playground */,
 				499939052A85DBF200D2ACDD /* L1_DemoApp.swift */,
 				499939072A85DBF200D2ACDD /* ContentView.swift */,
 				499939092A85DBF300D2ACDD /* Assets.xcassets */,
