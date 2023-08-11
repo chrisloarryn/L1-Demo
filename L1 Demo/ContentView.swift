@@ -9,53 +9,65 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
         // Color(red: 0, green: 0, blue: 0)
         // ZStack {
         // VStack {
-        VStack(alignment: .leading, spacing: 20.0) {
-                Image("gophers")
-                    .resizable()
-                    .cornerRadius(15)
-                    .aspectRatio(contentMode: .fit)
-                    .padding(.all)
-                
-                HStack {
-                    Text("gophers")
-                        .font(.title)
-                        .fontWeight(.bold)
+        
+        ZStack {
+            Color(.systemMint)
+                .ignoresSafeArea()
+            
+            VStack(alignment: .leading, spacing: 20.0) {
+                    Image("gophers")
+                        .resizable()
+                        .cornerRadius(15)
+                        .aspectRatio(contentMode: .fit)
+                    //     .padding(.all)
                     
-                    Spacer()
-                    
-                    VStack {
-                        HStack {
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.yellow)
-                                .font(.caption)
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.yellow)
-                                .font(.caption)
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.yellow)
-                                .font(.caption)
-                            Image(systemName: "star.leadinghalf.filled")
-                                .foregroundColor(.yellow)
-                                .font(.caption)
-                            Image(systemName: "star")
-                                .foregroundColor(.yellow)
-                                .font(.caption)
-                        }
+                    HStack {
+                        Text("gophers")
+                            .font(.title)
+                            .fontWeight(.bold)
                         
-                        Text("(Reviews 361)")
+                        Spacer()
+                        
+                        VStack {
+                            HStack {
+                                Image(systemName: "star.fill")
+                                Image(systemName: "star.fill")
+                                Image(systemName: "star.fill")
+                                Image(systemName: "star.leadinghalf.filled")
+                                Image(systemName: "star")
+                            }
+                            
+                            Text("(Reviews 361)")
+                        }
+                        .foregroundColor(.yellow)
+                        .font(.caption)
                     }
-                    // Image(systemName: "apple.logo")
-                    // Image(systemName: "applescript.fill")
-                }
+                    
+                    Text("please be a go language developer uwu")
+                        .font(.headline)
+                        .fontWeight(.light)
                 
-                Text("please be a go language developer uwu")
-                    .font(.headline)
-                    .fontWeight(.light)
-            }
+                    
+                    HStack {
+                        Spacer()
+                        Image(systemName: "fork.knife")
+                        Image(systemName: "binoculars.fill")
+                    }
+                    .foregroundColor(.gray)
+                    .font(.caption)
+                }
+            .padding()
+            .background(
+                Rectangle()
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    .shadow(radius: 15)
+            )
+            .padding()
+        }
     }
 }
 
