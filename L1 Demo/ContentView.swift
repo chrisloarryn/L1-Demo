@@ -13,27 +13,38 @@ struct ContentView: View {
         // Color(red: 0, green: 0, blue: 0)
         // ZStack {
         // VStack {
-        ZStack {
-            Color(.black)
-                .ignoresSafeArea()
-            
-            VStack(alignment: .leading, spacing: 20.0) {
+        VStack(alignment: .leading, spacing: 20.0) {
                 Image("gophers")
                     .resizable()
                     .cornerRadius(15)
                     .aspectRatio(contentMode: .fit)
                     .padding(.all)
                 
-                Text("gophers")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
+                HStack {
+                    Text("gophers")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Image(systemName: "star")
+                        .foregroundColor(.yellow)
+                    Image(systemName: "star")
+                        .foregroundColor(.yellow)
+                    // Image(systemName: "apple.logo")
+                    // Image(systemName: "applescript.fill")
+                    
+                    Text("(+3)")
+                }
+                
                 Text("please be a go language developer uwu")
                     .font(.headline)
                     .fontWeight(.light)
-                    .foregroundColor(.white)
             }
-        }
     }
 }
 
